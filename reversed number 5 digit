@@ -1,0 +1,12 @@
+num = input("Enter a five-digit number: ")
+
+if len(num) == 5 and num.isdigit():
+    reversed_num = num[::-1]
+    print(f"Reversed number: {reversed_num}")
+    
+    if num == reversed_num:
+        print("The original and reversed numbers are equal.")
+    else:
+        print("The original and reversed numbers are not equal.")
+else:
+    print("Please enter a valid five-digit number.")
